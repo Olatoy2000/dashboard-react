@@ -1,7 +1,14 @@
 import "./footer.scss";
 
 const Footer = () => {
-  return <div className="footer">this is the Footer</div>;
+  const getFullYear = new Date().getFullYear();
+
+  return (
+    <div className="footer">
+      <span>Olatoy Dashboard</span>
+      <span>&copy; {getFullYear} | All Right Reserved</span>
+    </div>
+  );
 };
 
 export default Footer;

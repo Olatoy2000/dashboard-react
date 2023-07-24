@@ -1,3 +1,64 @@
 .navbar {
-    
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+
+    .olatoy-logo {
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .notification {
+      position: relative;
+      span {
+        background-color: red;
+        color: white;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 12px;
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .user-icon {
+        background: white;
+        border-radius: 50%;
+        border: 2px solid greenyellow;
+      
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
 }

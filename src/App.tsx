@@ -3,25 +3,30 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import Users from "./pages/users/Users";
+import "./styles/global.scss";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Menu from "./components/menu/Menu";
+import Login from "./pages/login/login";
 
 function App() {
-  const Layout = () => (
-    <div className="main">
-      <Navbar />
-      <div className="container">
-        <div className="menuContainer">
-          <Menu />
+  const Layout = () => {
+    return (
+      <div className="main">
+        <Navbar />
+        <div className="container">
+          <div className="menuContainer">
+            <Menu />
+          </div>
+          <div className="contactContainer">
+            <Outlet />
+          </div>
         </div>
-        <div className="contactContainer">
-          <Outlet />
-        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -41,6 +46,10 @@ function App() {
         },
       ],
     },
+    {
+      path: "/login",
+      element: <Login />
+    }
   ]);
   return <RouterProvider router={router} />;
 }
