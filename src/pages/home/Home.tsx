@@ -10,6 +10,8 @@ import {
 } from "../../data";
 import PieChartBox from "../../components/pieChartBox/pieChartBox";
 import BarChartBox from "../../components/barChartBox/barChartBox";
+import BigChartBox from "../../components/bigChartBox/bigChartBox";
+import ChartBox from "../../components/chartBox/chartBox";
 
 const Home = () => {
   return (
@@ -29,8 +31,8 @@ const Home = () => {
       <div className="box box5">
         <ChatBox {...chartBoxConversion} />
       </div>
-      <div className="box box6">Box6</div>
-      <div className="box box7">Box7</div>
+      <div className="box box6"><ChartBox {...chartBoxUser} /></div>
+      <div className="box box7"><BigChartBox /></div>
       <div className="box box8">
         <BarChartBox {...barChartBoxVisit} />
       </div>
