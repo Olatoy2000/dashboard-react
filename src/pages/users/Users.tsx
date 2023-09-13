@@ -21,7 +21,6 @@ const columns: GridColDef[] = [
       );
     },
   },
-  { field: "verified", headerName: "Verified", width: 100, type: "boolean" },
 
   {
     field: "firstName",
@@ -35,22 +34,27 @@ const columns: GridColDef[] = [
     width: 150,
     editable: true,
   },
+
+  { field: "verified", headerName: "Verified", width: 100, type: "boolean" },
+
+  { field: "phone", headerName: "Phone", width: 200 },
+
+  { field: "email", headerName: "Email", width: 400 },
   {
-    field: "age",
-    headerName: "Age",
-    type: "number",
-    width: 110,
-    editable: true,
+    field: "createdAt",
+    headerName: "Created at",
+    width: 200,
   },
-  {
-    field: "fullName",
-    headerName: "Full name",
-    description: "This column has a value getter and is not sortable.",
-    sortable: false,
-    width: 160,
-    valueGetter: (params: GridValueGetterParams) =>
-      `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-  },
+
+  // {
+  //   field: "fullName",
+  //   headerName: "Full name",
+  //   description: "This column has a value getter and is not sortable.",
+  //   sortable: false,
+  //   width: 160,
+  //   valueGetter: (params: GridValueGetterParams) =>
+  //     `${params.row.firstName || ""} ${params.row.lastName || ""}`,
+  // },
 ];
 
 const Users = () => {
