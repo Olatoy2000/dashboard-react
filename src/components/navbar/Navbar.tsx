@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="/olatoy-nlogo.png" alt="" className="olatoy-logo" />
+        <img src="/second-dev.jpg" alt="" className="olatoy-logo" />
         <span className="">Olatoy Dashboard</span>
       </div>
       <div className="icons">
@@ -16,7 +16,10 @@ const Navbar = () => {
           <span>1</span>
         </div>
         <div className="user">
-        <img src="https://eu.ui-avatars.com/api/?name=Raheemah+Ayoola&size=250" alt="an avatar image" />
+          <img
+            src="https://eu.ui-avatars.com/api/?name=Raheemah+Ayoola&size=250"
+            alt="an avatar image"
+          />
           <span>Raheemah</span>
         </div>
         <img src="/settings.svg" alt="" />

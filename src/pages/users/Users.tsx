@@ -1,4 +1,4 @@
-import { GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { GridColDef } from "@mui/x-data-grid";
 import DataTable from "../../components/dataTable/DataTable";
 import "./users.scss";
 import { userRows } from "../../data";
@@ -45,16 +45,6 @@ const columns: GridColDef[] = [
     headerName: "Created at",
     width: 200,
   },
-
-  // {
-  //   field: "fullName",
-  //   headerName: "Full name",
-  //   description: "This column has a value getter and is not sortable.",
-  //   sortable: false,
-  //   width: 160,
-  //   valueGetter: (params: GridValueGetterParams) =>
-  //     `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-  // },
 ];
 
 const Users = () => {
